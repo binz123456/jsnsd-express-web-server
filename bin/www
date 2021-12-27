@@ -1,0 +1,11 @@
+const app = require ("../app")
+const http = require("http")
+
+const PORT = process.env.PORT || 3000
+
+// we pass expreess instance to createServer methpd
+//this express object accepts req and response object
+
+const server = http.createServer(app)
+
+server.listen(PORT)
